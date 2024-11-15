@@ -1,9 +1,12 @@
 const express = require('express')
 const app = express()
 const jwt = require("jsonwebtoken")
+const cors = require('cors')
 
 const JWT_SECRET = "dhahdausdhubduebue"
-
+ 
+// cross origin resource sharing middlware
+app.use(cors())
 
 
 // middleware for json
